@@ -1,6 +1,6 @@
 .contact-page { width: 100%; }
 .contact-hero { position: relative; height: 40vh; min-height: 300px; display: flex; align-items: center; justify-content: center; background: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600') center/cover no-repeat; }
-.contact-hero-overlay { position: absolute; inset: 0; background: rgba(11,42,86,0.8); }
+.contact-hero-overlay { position: absolute; inset: 0; background: rgba(45, 101, 180, 0.8); }
 .contact-hero-content { position: relative; z-index: 2; text-align: center; color: white; }
 .contact-hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
 .contact-main { padding: 60px 0; }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { 
@@ -8,14 +8,12 @@ import {
   FaWhatsapp,
   FaPhone, 
   FaEnvelope, 
-  FaMapMarkerAlt,
-  FaClock,
-  FaFileInvoice,
   FaBars,
   FaTimes,
   FaChevronDown
 } from 'react-icons/fa';
 import pmtLogo from '../../assets/PMTLogo.png';
+import LogoTitle from '../../assets/Logo_Tittle.jpg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +69,7 @@ const Navbar = () => {
                     <Link to="/" className="navbar-logo" onClick={closeMenu}>
                         <img src={pmtLogo} alt="PMT Orbit Logo" className="logo-image" />
                         <div className="logo-text-container">
-                            <span className="logo-text">PMT ORBIT</span>
+                            <img src={LogoTitle} alt="PMT ORBIT" className="logo-title-img"/>
 
                             <div className="logo-tagline-row">
                                 <span className="line"></span>

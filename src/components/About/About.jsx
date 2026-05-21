@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.css';
 import { FaGlobeAmericas, FaUsers, FaAward, FaHeart } from 'react-icons/fa';
 import PragatiImg from '../../assets/Team/Pragati_Mukesh_Tiwari.png';
@@ -7,7 +6,7 @@ import AlokTeamImg from '../../assets/Team/Alok_Kumar_Singh.png';
 
 const About = () => {
   const stats = [
-    { number: '10+', label: 'Years Experience' },
+    // { number: '10+', label: 'Years Experience' },
     { number: '50K+', label: 'Happy Travelers' },
     { number: '150+', label: 'Destinations' },
     { number: '95%', label: 'Satisfaction Rate' }
@@ -104,7 +103,7 @@ const About = () => {
             </div>
             <div className="story-image">
               <img 
-                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600" 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" 
                 alt="Our Story" 
               />
             </div>

@@ -5,13 +5,14 @@
 
 /* CSS Variables for Color Theme */
 :root {
-  --primary-navy: #0b2a56;
-  --primary-blue: #1e5fa8;
+  --primary-navy: #0a1f3f;
+  --primary-blue: #1a73e8;
+  --accent-cyan: #00bcd4;
   --accent-orange: #ff6b35;
-  --accent-gold: #ffa500;
+  --accent-gold: #f5a623;
   --bg-white: #ffffff;
   --bg-light: #f8f9fa;
-  --text-dark: #2c3e50;
+  --text-dark: #1a1a2e;
   --text-gray: #6c757d;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
@@ -51,10 +52,11 @@ body {
    TYPOGRAPHY
 ======================================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-family: 'Rajdhani', 'Montserrat', 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary-navy);
+  letter-spacing: 0.5px;
 }
 
 h1 {

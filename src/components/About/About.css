@@ -7,8 +7,7 @@
 .about-hero {
   position: relative;
   height: 50vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920');
+  background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -22,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(102, 126, 234, 0.7);
+  background: linear-gradient(135deg, rgba(10, 31, 63, 0.6) 0%, rgba(26, 115, 232, 0.5) 100%);
 }
 
 .about-hero-content {
@@ -37,6 +36,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -142,12 +142,12 @@
 }
 
 .mv-card.mission {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0b2a56 0%, #1e5fa8 100%);
   color: white;
 }
 
 .mv-card.vision {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #ff6b35 0%, #ffa500 100%);
   color: white;
 }
 
@@ -155,12 +155,14 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  color: white;
 }
 
 .mv-card p {
   font-size: 1.1rem;
   line-height: 1.8;
-  opacity: 0.95;
+  opacity: 1;
+  color: #f0f0f0;
 }
 
 /* Values Section */
@@ -250,8 +252,8 @@
 }
 
 .team-image {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   overflow: hidden;
@@ -262,6 +264,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .team-card h3 {

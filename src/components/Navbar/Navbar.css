@@ -67,7 +67,7 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -77,11 +77,18 @@
 .logo-image {
   height: 70px;
   width: auto;
+  margin-right: -5px;
 }
 .logo-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.logo-title-img {
+  height: 26px;
+  min-width: 130px;
+  object-fit: contain;
 }
 .logo-text {
   font-size: 1.5rem;
@@ -89,24 +96,57 @@
   color: #0b2a56;
   letter-spacing: 1px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.logo-o-graphic {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin: 0 -2px;
+}
+.logo-orbit-o {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #ff6b35;
+  border-radius: 50%;
+  font-size: 0;
+  margin: 0 1px;
+  vertical-align: middle;
+}
+.orbit-plane {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  font-size: 10px;
+  color: #ff6b35;
+  transform: rotate(-30deg);
 }
 .logo-tagline {
-  font-size: 0.65rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.45rem;
   font-weight: 500;
-  color: #0b2a56;
+  color: #2F6FB5;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 .logo-tagline-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   margin-top: 2px;
+  width: 100%;
+  justify-content: center;
 }
 .logo-tagline-row .line {
-  width: 25px;
-  height: 1px;
-  background-color: #0b2a56;
+  width: 15px;
+  height: 1.5px;
+  background-color: #2F6FB5;
 }
 .nav-wrapper {
   display: flex;

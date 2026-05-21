@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import {
@@ -98,8 +97,8 @@ const Footer = () => {
                 <li>
                   <FaClock />
                   <div>
-                    <div>Sun - Fri: 09:00 AM – 10:00 PM</div>
-                    <div>Saturday: 09:00 AM – 11:00 PM</div>
+                    <div>Tue - Sun: 10:00 AM - 7:00 PM</div>
+                    <div>Monday: Closed</div>
                   </div>
                 </li>
               </ul>

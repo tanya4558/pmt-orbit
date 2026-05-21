@@ -1,10 +1,9 @@
-﻿import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import './Home.css';
 import {
-  FaPlane, FaHotel, FaUmbrellaBeach, FaPassport,
-  FaWhatsapp, FaSearch, FaExchangeAlt, FaCalendarAlt,
-  FaUser, FaStar, FaQuoteLeft, FaArrowRight,
+  FaPlane, 
+  FaWhatsapp,
+ FaStar, FaQuoteLeft,
   FaShieldAlt, FaHeadset, FaTag, FaGlobeAmericas,
   FaPhone, FaEnvelope
 } from 'react-icons/fa';
@@ -16,7 +15,6 @@ import PrabhakarImg from '../../assets/Customers/Prabhakar_Kumar_kashyap.png';
 import VivekImg from '../../assets/Customers/Vivek_Kumar.png';
 
 const Home = () => {
-  const [tripType, setTripType] = useState('roundtrip');
 
   const packages = [
     { id: 1, name: 'Dubai', days: '5N/6D', price: '₹45,999', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500', tag: 'Bestseller' },
@@ -27,12 +25,6 @@ const Home = () => {
     { id: 6, name: 'Kashmir', days: '5N/6D', price: '₹22,999', image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=500', tag: 'Scenic' },
     { id: 7, name: 'Kerala', days: '4N/5D', price: '₹18,999', image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500', tag: 'Nature' },
     { id: 8, name: 'London', days: '6N/7D', price: '₹89,999', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500', tag: 'Premium' },
-  ];
-
-  const offers = [
-    { id: 1, title: 'Flat ₹2000 Off on Domestic Flights', code: 'PMTFLY2K', validity: 'Valid till 30 Jun', bg: 'linear-gradient(135deg, #0b2a56, #1e5fa8)' },
-    { id: 2, title: 'International Flights Starting ₹14,999', code: 'PMTINTL', validity: 'Limited Period', bg: 'linear-gradient(135deg, #ff6b35, #ffa500)' },
-    { id: 3, title: '25% Off on Holiday Packages', code: 'PMTHOLIDAY25', validity: 'Book by this week', bg: 'linear-gradient(135deg, #1e5fa8, #25D366)' },
   ];
 
   const testimonials = [
@@ -98,13 +90,13 @@ const Home = () => {
                   <span>info@pmtorbit.com</span>
                 </div>
               </div>
-              <div className="coming-soon-item">
+              {/* <div className="coming-soon-item">
                 <FaGlobeAmericas className="cs-icon web" />
                 <div>
                   <strong>Website</strong>
                   <span>pmtorbit.com</span>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="coming-soon-actions">
               <a href="https://wa.me/919415331058?text=Hi PMT Orbit! I need help with flight booking." className="cs-btn cs-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -122,7 +114,7 @@ const Home = () => {
       </section>
 
       {/* Top Offers Section */}
-      <section className="offers-section">
+      {/* <section className="offers-section">
         <div className="container">
           <h2 className="section-title">Top Flight Offers</h2>
           <p className="section-subtitle">Grab exclusive deals before they expire</p>
@@ -137,7 +129,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Popular Packages Section */}
       <section className="packages-section">

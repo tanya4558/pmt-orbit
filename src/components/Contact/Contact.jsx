@@ -1,5 +1,5 @@
-﻿import React, { useState } from 'react';
-import './Contact.css';
+﻿import './Contact.css';
+import { useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
@@ -72,8 +72,8 @@ const Contact = () => {
                   <FaClock />
                   <div>
                     <h4>Business Hours</h4>
-                    <p>Sun - Fri: 09:00 AM - 10:00 PM</p>
-                    <p>Saturday: 09:00 AM - 11:00 PM</p>
+                    <p>Tue - Sun: 10:00 AM - 7:00 PM</p>
+                    <p>Monday: Closed</p>
                   </div>
                 </div>
               </div>
