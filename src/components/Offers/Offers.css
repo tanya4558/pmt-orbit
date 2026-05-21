@@ -1,0 +1,18 @@
+.offers-page { width: 100%; }
+.offers-hero { position: relative; height: 40vh; min-height: 300px; display: flex; align-items: center; justify-content: center; background: url('https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=1600') center/cover no-repeat; }
+.offers-hero-overlay { position: absolute; inset: 0; background: rgba(11,42,86,0.8); }
+.offers-hero-content { position: relative; z-index: 2; text-align: center; color: white; }
+.offers-hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+.offers-list { padding: 60px 0; }
+.offers-page-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.offer-page-card { border-radius: 16px; padding: 30px; color: white; transition: transform 0.3s ease; }
+.offer-page-card:hover { transform: translateY(-5px); }
+.offer-page-icon { font-size: 1.5rem; margin-bottom: 15px; opacity: 0.8; }
+.offer-page-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
+.offer-page-desc { font-size: 0.9rem; opacity: 0.9; margin-bottom: 15px; line-height: 1.5; }
+.offer-page-code { background: rgba(255,255,255,0.2); padding: 8px 15px; border-radius: 8px; display: inline-block; margin-bottom: 10px; font-size: 0.9rem; }
+.offer-page-validity { font-size: 0.8rem; opacity: 0.7; margin-bottom: 20px; }
+.offer-page-btn { display: inline-block; background: white; color: #0b2a56; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; }
+.offer-page-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+@media (max-width: 900px) { .offers-page-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .offers-page-grid { grid-template-columns: 1fr; } }

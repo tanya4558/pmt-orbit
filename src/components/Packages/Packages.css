@@ -1,0 +1,34 @@
+.packages-page { width: 100%; }
+.packages-hero {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600') center/cover no-repeat;
+}
+.packages-hero-overlay { position: absolute; inset: 0; background: rgba(11,42,86,0.8); }
+.packages-hero-content { position: relative; z-index: 2; text-align: center; color: white; }
+.packages-hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+.packages-list { padding: 60px 0; }
+.packages-page-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+.pkg-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; transition: all 0.3s ease; }
+.pkg-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+.pkg-image { position: relative; width: 280px; min-height: 250px; flex-shrink: 0; }
+.pkg-image img { width: 100%; height: 100%; object-fit: cover; }
+.pkg-tag { position: absolute; top: 12px; left: 12px; background: #ff6b35; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+.pkg-details { padding: 25px; flex: 1; display: flex; flex-direction: column; }
+.pkg-details h3 { font-size: 1.4rem; color: #0b2a56; margin-bottom: 10px; }
+.pkg-meta { display: flex; gap: 20px; color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+.pkg-meta span { display: flex; align-items: center; gap: 6px; }
+.pkg-highlights { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; flex: 1; }
+.pkg-highlights li { font-size: 0.85rem; color: #555; padding-left: 15px; position: relative; }
+.pkg-highlights li::before { content: '?'; position: absolute; left: 0; color: #25D366; font-weight: bold; }
+.pkg-bottom { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px; }
+.pkg-price small { display: block; color: #888; font-size: 0.75rem; }
+.pkg-price strong { color: #ff6b35; font-size: 1.3rem; }
+.pkg-price span { color: #888; font-size: 0.75rem; }
+.pkg-whatsapp { display: flex; align-items: center; gap: 6px; background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; }
+.pkg-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37,211,102,0.4); }
+@media (max-width: 900px) { .packages-page-grid { grid-template-columns: 1fr; } .pkg-card { flex-direction: column; } .pkg-image { width: 100%; height: 200px; min-height: auto; } }

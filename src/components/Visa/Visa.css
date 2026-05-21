@@ -1,0 +1,35 @@
+.visa-page { width: 100%; }
+.visa-hero { position: relative; height: 40vh; min-height: 300px; display: flex; align-items: center; justify-content: center; background: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600') center/cover no-repeat; }
+.visa-hero-overlay { position: absolute; inset: 0; background: rgba(11,42,86,0.8); }
+.visa-hero-content { position: relative; z-index: 2; text-align: center; color: white; }
+.visa-hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+.visa-intro { padding: 60px 0; }
+.visa-intro-content { display: flex; align-items: center; gap: 30px; background: #f8f9fc; padding: 40px; border-radius: 16px; }
+.visa-big-icon { font-size: 4rem; color: #1e5fa8; flex-shrink: 0; }
+.visa-intro-content h2 { color: #0b2a56; font-size: 1.8rem; margin-bottom: 10px; }
+.visa-intro-content p { color: #555; font-size: 1rem; line-height: 1.7; }
+.visa-process { padding: 60px 0; background: #f8f9fc; }
+.visa-steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+.visa-step-card { background: white; padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: all 0.3s ease; }
+.visa-step-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.step-number { display: inline-block; width: 50px; height: 50px; line-height: 50px; background: linear-gradient(135deg, #0b2a56, #1e5fa8); color: white; border-radius: 50%; font-weight: 700; font-size: 1.2rem; margin-bottom: 15px; }
+.visa-step-card h3 { color: #0b2a56; margin-bottom: 10px; }
+.visa-step-card p { color: #666; font-size: 0.9rem; line-height: 1.5; }
+.visa-countries { padding: 60px 0; }
+.visa-countries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+.visa-country-card { background: white; padding: 25px; border-radius: 16px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.06); transition: all 0.3s ease; }
+.visa-country-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+.country-icon { font-size: 2rem; color: #1e5fa8; margin-bottom: 12px; }
+.visa-country-card h3 { color: #0b2a56; font-size: 1.1rem; margin-bottom: 8px; }
+.visa-type { color: #ff6b35; font-weight: 600; font-size: 0.85rem; margin-bottom: 5px; }
+.visa-processing { color: #888; font-size: 0.8rem; margin-bottom: 15px; }
+.visa-enquire { display: inline-flex; align-items: center; gap: 6px; background: #25D366; color: white; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 0.8rem; transition: all 0.3s ease; }
+.visa-enquire:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(37,211,102,0.4); }
+.visa-cta { padding: 60px 0; background: linear-gradient(135deg, #0b2a56, #1e5fa8); }
+.visa-cta-content { text-align: center; }
+.visa-cta-content h2 { color: white; font-size: 2rem; margin-bottom: 10px; }
+.visa-cta-content p { color: #f0e6d3; margin-bottom: 25px; font-size: 1.05rem; }
+.visa-cta-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 16px 35px; border-radius: 30px; font-size: 1.1rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; }
+.visa-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+@media (max-width: 900px) { .visa-steps-grid { grid-template-columns: repeat(2, 1fr); } .visa-countries-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .visa-steps-grid { grid-template-columns: 1fr; } .visa-countries-grid { grid-template-columns: 1fr; } .visa-intro-content { flex-direction: column; text-align: center; } }

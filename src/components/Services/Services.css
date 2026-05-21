@@ -1,0 +1,18 @@
+.services-page { width: 100%; }
+.services-hero { position: relative; height: 40vh; min-height: 300px; display: flex; align-items: center; justify-content: center; background: url('https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=1600') center/cover no-repeat; }
+.services-hero-overlay { position: absolute; inset: 0; background: rgba(11,42,86,0.8); }
+.services-hero-content { position: relative; z-index: 2; text-align: center; color: white; }
+.services-hero-content h1 { font-size: 3rem; margin-bottom: 10px; }
+.services-list { padding: 60px 0; }
+.service-block { display: flex; align-items: center; gap: 50px; margin-bottom: 60px; padding: 40px; background: #f8f9fc; border-radius: 20px; }
+.service-block.reverse { flex-direction: row-reverse; }
+.service-icon-area { flex-shrink: 0; }
+.service-icon-circle { width: 120px; height: 120px; background: linear-gradient(135deg, #0b2a56, #1e5fa8); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; box-shadow: 0 8px 25px rgba(11,42,86,0.3); }
+.service-details h2 { color: #0b2a56; font-size: 1.8rem; margin-bottom: 12px; }
+.service-desc { color: #555; font-size: 1rem; line-height: 1.7; margin-bottom: 20px; }
+.service-features { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; }
+.service-feature { display: flex; align-items: center; gap: 6px; background: white; padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; color: #333; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.service-feature svg { color: #25D366; }
+.service-enquire { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+.service-enquire:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37,211,102,0.4); }
+@media (max-width: 768px) { .service-block, .service-block.reverse { flex-direction: column; text-align: center; padding: 25px; } .service-features { justify-content: center; } }
