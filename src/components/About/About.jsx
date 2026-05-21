@@ -38,12 +38,12 @@ const About = () => {
   const team = [
     {
       name: 'Pragati Mukesh Tiwari',
-      role: 'CEO & Founder',
+      role: 'CEO',
       image: PragatiImg
     },
     {
       name: 'Mukesh Tiwari',
-      role: 'Director & Business Head',
+      role: 'Co-Founder & Business Head',
       image: MukeshImg
     },
     {

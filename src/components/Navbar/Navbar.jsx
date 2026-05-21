@@ -10,14 +10,13 @@ import {
   FaEnvelope, 
   FaBars,
   FaTimes,
-  FaChevronDown
 } from 'react-icons/fa';
 import pmtLogo from '../../assets/PMTLogo.png';
 import LogoTitle from '../../assets/Logo_Tittle.jpg';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [servicesDropdown, setServicesDropdown] = useState(false);
+    const [ setServicesDropdown] = useState(false);
     const location = useLocation();
 
     const toggleMenu = () => {
@@ -116,23 +115,10 @@ const Navbar = () => {
                                 <Link
                                     to="/services"
                                     className={`nav-link ${isActive('/services')}`}
+                                    onClick={closeMenu}
                                 >
-                                    Services <FaChevronDown className="dropdown-icon" />
+                                    Services 
                                 </Link>
-                                <ul className={`dropdown-menu ${servicesDropdown ? 'show' : ''}`}>
-                                    <li>
-                                        <Link to="/services" onClick={closeMenu}>All Services</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/services#flights" onClick={closeMenu}>Flight Booking</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/services#hotels" onClick={closeMenu}>Hotel Reservation</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/services#tours" onClick={closeMenu}>Tour Packages</Link>
-                                    </li>
-                                </ul>
                             </li>
 
                             <li className="nav-item">
