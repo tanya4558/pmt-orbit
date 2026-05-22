@@ -49,17 +49,31 @@
   gap: 2px;
 }
 
-.footer-logo-text span {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: white;
+.footer-title-img {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
 }
 
-.footer-logo-text small {
-  font-size: 0.7rem;
-  font-weight: 400;
+.footer-tagline-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-tagline-row .line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.footer-tagline {
+  font-size: 0.55rem;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
 }
 
 .footer-description {

@@ -12,6 +12,7 @@ import {
   FaFileInvoice
 } from 'react-icons/fa';
 import pmtLogo from '../../assets/PMTLogo.png';
+import logoTitle from '../../assets/Logo_Tittle.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,8 +27,12 @@ const Footer = () => {
               <h3 className="footer-logo">
                 <img src={pmtLogo} alt="PMT Orbit Logo" className="footer-logo-image" />
                 <div className="footer-logo-text">
-                  <span>PMT Orbit</span>
-                  <small>Beyond Boundaries</small>
+                  <img src={logoTitle} alt="PMT ORBIT" className="footer-title-img" />
+                  <div className="footer-tagline-row">
+                    <span className="line"></span>
+                    <span className="footer-tagline">BEYOND BOUNDARIES</span>
+                    <span className="line"></span>
+                  </div>
                 </div>
               </h3>
               <p className="footer-description">
@@ -61,7 +66,7 @@ const Footer = () => {
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/packages">Packages</Link></li>
-                <li><Link to="/offers">Offers</Link></li>
+                {/* <li><Link to="/offers">Offers</Link></li> */}
                 <li><Link to="/visa">Visa Assistance</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
               </ul>

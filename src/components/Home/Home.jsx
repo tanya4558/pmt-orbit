@@ -28,9 +28,9 @@ const Home = () => {
   ];
 
   const testimonials = [
-    { id: 1, name: 'Ahtaisham Hussain', location: 'Delhi', text: 'PMT Orbit planned our entire Dubai trip flawlessly. From visa to hotel, everything was taken care of. Truly beyond boundaries!', rating: 5, image: AhtaishamImg },
-    { id: 2, name: 'Tanya Singh', location: 'Mumbai', text: 'Had an amazing experience booking through PMT Orbit. The team handled everything professionally and our family trip to Singapore was absolutely perfect!', rating: 5, image: TanyaImg },
-    { id: 3, name: 'Neha Pandey', location: 'Delhi', text: 'Excellent service! Got the best flight deals and the visa process was completely hassle-free. Highly recommended for families.', rating: 5, image: NehaImg },
+    { id: 1, name: 'Ahtaisham Hussain', location: 'Kolkata', text: 'PMT Orbit planned our entire Dubai trip flawlessly. From visa to hotel, everything was taken care of. Truly beyond boundaries!', rating: 5, image: AhtaishamImg },
+    { id: 2, name: 'Tanya Singh', location: 'Patna', text: 'Had an amazing experience booking through PMT Orbit. The team handled everything professionally and our family trip to Singapore was absolutely perfect!', rating: 5, image: TanyaImg },
+    { id: 3, name: 'Neha Pandey', location: 'Mumbai', text: 'Excellent service! Got the best flight deals and the visa process was completely hassle-free. Highly recommended for families.', rating: 5, image: NehaImg },
     { id: 4, name: 'Prabhakar Kumar Kashyap', location: 'Patna', text: 'Professional team with great communication. Our Kashmir trip was perfectly organized. Will definitely book again!', rating: 5, image: PrabhakarImg },
     { id: 5, name: 'Vivek Kumar', location: 'Noida', text: 'Amazing deals on Bali package! The itinerary was well-planned and support was instant on WhatsApp. Five stars!', rating: 5, image: VivekImg },
   ];

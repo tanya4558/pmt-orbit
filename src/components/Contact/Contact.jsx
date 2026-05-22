@@ -1,18 +1,38 @@
-﻿import './Contact.css';
-import { useState } from 'react';
+﻿import { useState } from 'react';
+import './Contact.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
+  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const msg = "Hi PMT Orbit! I'm " + formData.name + ". " + formData.message;
-    window.open("https://wa.me/919415331058?text=" + encodeURIComponent(msg), '_blank');
+    setStatus('Sending...');
+
+    const response = await fetch('https://formspree.io/f/xlgvnjek', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject || 'New Inquiry from PMT Orbit Website',
+        message: formData.message
+      })
+    });
+
+    if (response.ok) {
+      setStatus('Message sent successfully!');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      setTimeout(() => setStatus(''), 5000);
+    } else {
+      setStatus('Failed to send. Please try again.');
+    }
   };
 
   return (
@@ -40,7 +60,8 @@ const Contact = () => {
                   <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
                 </div>
                 <textarea name="message" placeholder="Your Message *" rows="5" required value={formData.message} onChange={handleChange}></textarea>
-                <button type="submit" className="contact-submit">Send via WhatsApp</button>
+                <button type="submit" className="contact-submit">{status === 'Sending...' ? 'Sending...' : 'Send via Email'}</button>
+                {status && status !== 'Sending...' && <p style={{ marginTop: '10px', color: status.includes('success') ? '#25D366' : '#ff4444', fontWeight: 600 }}>{status}</p>}
               </form>
             </div>
 
