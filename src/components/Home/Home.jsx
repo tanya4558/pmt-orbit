@@ -3,8 +3,7 @@ import './Home.css';
 import {
   FaPlane, 
   FaWhatsapp,
- FaStar, FaQuoteLeft,
-  FaShieldAlt, FaHeadset, FaTag, FaGlobeAmericas,
+ FaStar, FaQuoteLeft, FaHeadset, FaTag, FaGlobeAmericas,FaSuitcaseRolling,
   FaPhone, FaEnvelope
 } from 'react-icons/fa';
 
@@ -35,13 +34,28 @@ const Home = () => {
     { id: 5, name: 'Vivek Kumar', location: 'Noida', text: 'Amazing deals on Bali package! The itinerary was well-planned and support was instant on WhatsApp. Five stars!', rating: 5, image: VivekImg },
   ];
 
-  const whyChoose = [
-    { icon: <FaShieldAlt />, title: 'Trusted & Reliable', desc: '10+ years of excellence in travel services' },
-    { icon: <FaTag />, title: 'Best Price Guarantee', desc: 'Competitive rates with no hidden charges' },
-    { icon: <FaHeadset />, title: '24/7 Support', desc: 'Round the clock assistance for all travelers' },
-    { icon: <FaGlobeAmericas />, title: '150+ Destinations', desc: 'Worldwide coverage for all travel needs' },
-  ];
-
+const whyChoose = [
+  {
+    icon: <FaTag />,
+    title: 'Best Price Guarantee',
+    desc: 'Competitive rates with no hidden charges',
+  },
+  {
+    icon: <FaHeadset />,
+    title: '24/7 Customer Support',
+    desc: 'Dedicated assistance whenever you need help',
+  },
+  {
+    icon: <FaGlobeAmericas />,
+    title: 'Domestic & International Tours',
+    desc: 'Explore popular destinations with customized packages',
+  },
+  {
+    icon: <FaSuitcaseRolling />,
+    title: 'Customized Travel Plans',
+    desc: 'Personalized itineraries designed for every traveler',
+  },
+];
   return (
     <div className="home">
       {/* Hero Section */}

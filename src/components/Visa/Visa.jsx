@@ -1,7 +1,5 @@
-﻿import React from 'react';
-import { Link } from 'react-router-dom';
-import './Visa.css';
-import { FaPassport, FaFileAlt, FaCheckCircle, FaWhatsapp, FaGlobeAmericas } from 'react-icons/fa';
+﻿import './Visa.css';
+import { FaPassport, FaWhatsapp, FaGlobeAmericas } from 'react-icons/fa';
 
 const Visa = () => {
   const countries = [
@@ -38,7 +36,10 @@ const Visa = () => {
             <FaPassport className="visa-big-icon" />
             <div>
               <h2>Expert Visa Services</h2>
-              <p>Our dedicated visa team handles the entire process - from documentation to submission. With 10+ years of experience, we ensure smooth and timely visa processing for all major countries.</p>
+                <p>
+                  Our dedicated visa team handles the entire process — from documentation to submission. 
+                   We ensure smooth, reliable, and timely visa processing for all major countries.
+               </p>    
             </div>
           </div>
         </div>

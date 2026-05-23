@@ -48,7 +48,7 @@ const About = () => {
     },
     {
       name: 'Alok Kumar Singh',
-      role: 'Finance Head',
+      role: 'Business Advisor',
       image: AlokTeamImg
     }
   ];
