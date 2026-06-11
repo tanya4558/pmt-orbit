@@ -2,7 +2,7 @@ import './About.css';
 import { FaGlobeAmericas, FaUsers, FaAward, FaHeart } from 'react-icons/fa';
 import PragatiImg from '../../assets/Team/Pragati_Mukesh_Tiwari.png';
 import MukeshImg from '../../assets/Team/Mukesh_Tiwari.png';
-import AlokTeamImg from '../../assets/Team/Alok_Kumar_Singh.png';
+//import AlokTeamImg from '../../assets/Team/Alok_Kumar_Singh.png';
 
 const About = () => {
   const stats = [
@@ -45,12 +45,12 @@ const About = () => {
       name: 'Mukesh Tiwari',
       role: 'Co-Founder & Business Head',
       image: MukeshImg
-    },
-    {
-      name: 'Alok Kumar Singh',
-      role: 'Business Advisor',
-      image: AlokTeamImg
     }
+    // {
+    //   name: 'Alok Kumar Singh',
+    //   role: 'Business Advisor',
+    //   image: AlokTeamImg
+    // }
   ];
 
   return (
